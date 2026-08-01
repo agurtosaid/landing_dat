@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Solutions Group — Desarrollo de software a medida</title>
+<meta name="description" content="Data Solutions Group (DSG): equipo de desarrolladores en Perú. Software a medida, desarrollo desde cero, landing pages, ecommerce y pagos en línea.">
+<link rel="icon" type="image/png" href="assets/logo-dsg.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--
+THESIS: Cada sección se "commitea" y se despliega en vivo frente al visitante;
+rechaza la agencia-SaaS genérica (hero con gradiente + grilla de íconos).
+OWN-WORLD: negro real de fondo, verde/teal DSG heredado del isotipo como único
+acento funcional; IBM Plex Sans para títulos y cuerpo, IBM Plex Mono para
+metadatos y comandos; una red de partículas conectadas (circuito vivo) de
+fondo en toda la página, más trazas tipo PCB como reglas y conectores.
+STORY: el visitante entiende que DSG construye software real —a medida,
+ecommerce, pagos— viendo el propio proceso de build, y contacta por WhatsApp
+como quien ejecuta un comando.
+FIRST VIEWPORT: secuencia de boot que dibuja el circuito del isotipo DSG,
+luego titular + subtítulo, con un prompt CTA "$ contactar --whatsapp" visible
+bajo el pliegue.
+FORM: Build Log en vivo — candidata 7/7 de la lista propia, seed ade1a8ea,
+elegida por el usuario sobre 3 alternativas (letrero de neón, afiche noir,
+librea de carreras).
+FINISH: unreviewed and undocumented is unfinished; this build ends with the
+finish review, the verdict, and DESIGN.md
+-->
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<div id="particles-js" aria-hidden="true"></div>
+
+<header class="site-header" data-header>
+  <a href="#top" class="brand" aria-label="Data Solutions Group, inicio">
+    <img src="assets/logo-dsg.png" alt="Data Solutions Group" class="brand__mark">
+  </a>
+  <a class="header-cta" href="https://wa.me/51987613796" target="_blank" rel="noopener">
+    <span class="prompt-glyph">$</span> contactar<span class="prompt-flag">&nbsp;--whatsapp</span>
+  </a>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top" aria-label="Presentación">
+    <div class="hero__inner">
+      <p class="boot" data-boot aria-hidden="true">
+        <span class="boot__line">$ dsg --init cliente=&quot;tu-negocio&quot;</span>
+        <span class="boot__line">✓ analizando requerimientos</span>
+        <span class="boot__line">✓ compilando stack completo (software · landing · ecommerce · pagos)</span>
+        <span class="boot__line boot__line--ok">✓ DSG listo</span>
+      </p>
+
+      <h1 class="hero__title">
+        Construimos el software<br>que tu negocio necesita.
+      </h1>
+      <p class="hero__subtitle">
+        Data Solutions Group es el equipo que diseña y construye tu software:
+        de la idea al sistema en producción, sin intermediarios.
+      </p>
+
+      <div class="hero__actions">
+        <a class="cmd-button" href="https://wa.me/51987613796" target="_blank" rel="noopener">
+          <span class="prompt-glyph">$</span> contactar <span class="prompt-flag">--whatsapp</span>
+          <span class="cursor" aria-hidden="true"></span>
+        </a>
+        <a class="text-link" href="#servicios">ver_servicios <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS (git log) ============ -->
+  <section class="log" id="servicios" aria-label="Servicios">
+    <h2 class="section-command">$ git log --servicios</h2>
+
+    <ol class="log__list">
+      <li class="commit">
+        <div class="commit__meta">
+          <span class="commit__hash">7a3f9c2</span>
+          <span class="commit__date">rama: principal</span>
+        </div>
+        <h3 class="commit__title">feat(software): desarrollo de software a medida</h3>
+        <p class="commit__body">
+          Sistemas diseñados y construidos alrededor de tu operación real —
+          no una plantilla genérica reempaquetada.
+        </p>
+      </li>
+
+      <li class="commit">
+        <div class="commit__meta">
+          <span class="commit__hash">e19b04d</span>
+          <span class="commit__date">rama: principal</span>
+        </div>
+        <h3 class="commit__title">feat(core): desarrollo desde cero</h3>
+        <p class="commit__body">
+          Arquitectura, base de datos y código propio desde el primer commit,
+          pensados para crecer con tu negocio.
+        </p>
+      </li>
+
+      <li class="commit">
+        <div class="commit__meta">
+          <span class="commit__hash">c582af1</span>
+          <span class="commit__date">rama: principal</span>
+        </div>
+        <h3 class="commit__title">feat(web): landing pages</h3>
+        <p class="commit__body">
+          Páginas que convierten visitas en contactos reales, optimizadas
+          para carga rápida y para el visitante que decide en segundos.
+        </p>
+      </li>
+
+      <li class="commit">
+        <div class="commit__meta">
+          <span class="commit__hash">44d7e3a</span>
+          <span class="commit__date">rama: principal</span>
+        </div>
+        <h3 class="commit__title">feat(tienda): ecommerce</h3>
+        <p class="commit__body">
+          Catálogo, carrito e inventario funcionando como un solo sistema,
+          listo para vender desde el día uno.
+        </p>
+      </li>
+
+      <li class="commit">
+        <div class="commit__meta">
+          <span class="commit__hash">9b1f620</span>
+          <span class="commit__date">rama: principal</span>
+        </div>
+        <h3 class="commit__title">feat(cobros): pagos en línea</h3>
+        <p class="commit__body">
+          Integración de pasarelas de pago para que tu negocio cobre sin
+          fricción, dentro de tu propia web.
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ PIPELINE ============ -->
+  <section class="pipeline" id="proceso" aria-label="Proceso de trabajo">
+    <h2 class="section-command">$ dsg deploy --pipeline</h2>
+
+    <ol class="pipeline__stages" data-pipeline>
+      <li class="stage">
+        <span class="stage__index">planificar</span>
+        <p class="stage__desc">Entendemos tu negocio, tus procesos y lo que el software debe resolver.</p>
+      </li>
+      <li class="stage">
+        <span class="stage__index">construir</span>
+        <p class="stage__desc">Escribimos el sistema: interfaz, lógica y datos, avanzando en iteraciones visibles.</p>
+      </li>
+      <li class="stage">
+        <span class="stage__index">probar</span>
+        <p class="stage__desc">Revisamos cada flujo antes de que lo toque tu cliente final.</p>
+      </li>
+      <li class="stage">
+        <span class="stage__index">desplegar</span>
+        <p class="stage__desc">Publicamos en tu dominio, con pagos y datos ya conectados.</p>
+      </li>
+      <li class="stage stage--live">
+        <span class="stage__index">en vivo</span>
+        <p class="stage__desc">Tu negocio operando con software propio, con nosotros como soporte.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ POSICIONAMIENTO ============ -->
+  <section class="stance" aria-label="Por qué DSG">
+    <div class="stance__inner">
+      <h2 class="stance__title">Todo bajo un mismo equipo.</h2>
+      <p class="stance__body">
+        La mayoría de negocios termina repartiendo su presencia digital entre varios
+        freelancers que no se hablan entre sí: uno para la web, otro para la tienda,
+        otro para los pagos. Data Solutions Group construye y mantiene las cuatro
+        cosas como un solo sistema, con un mismo equipo — desde la primera línea de
+        código hasta el negocio operando.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="contact" id="contacto" aria-label="Contacto">
+    <h2 class="section-command">$ contactar --whatsapp</h2>
+    <p class="contact__lede">Escríbenos y coordinamos tu proyecto en minutos.</p>
+    <a class="cmd-button cmd-button--large" href="https://wa.me/51987613796" target="_blank" rel="noopener">
+      <span class="prompt-glyph">$</span> +51 987 613 796
+      <span class="cursor" aria-hidden="true"></span>
+    </a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <img src="assets/logo-dsg.png" alt="Data Solutions Group" class="footer__mark">
+  <div class="footer__meta">
+    <span>DAT.PE</span>
+    <span aria-hidden="true">·</span>
+    <span>Perú</span>
+  </div>
+  <nav class="footer__social" aria-label="Redes sociales">
+    <span class="social-icon social-icon--pending" aria-disabled="true" title="Facebook: enlace pendiente de confirmar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 8.5h2V5.2c-.35-.05-1.55-.15-2.95-.15-2.92 0-4.92 1.78-4.92 5.05v2.6H6.2v3.7h2.93V21.8h3.7v-5.4h2.82l.45-3.7h-3.27V10.4c0-1.07.29-1.9 1.17-1.9Z"/></svg>
+    </span>
+    <span class="social-icon social-icon--pending" aria-disabled="true" title="Instagram: enlace pendiente de confirmar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.9" cy="7.1" r="0.9" fill="currentColor" stroke="none"/></svg>
+    </span>
+    <a class="social-icon" href="https://wa.me/51987613796" target="_blank" aria-label="Data Solutions Group en WhatsApp" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.6 17.4 5 20l2.7-1.5A7.6 7.6 0 1 0 4.6 12 7.5 7.5 0 0 0 6.6 17.4Z"/><path d="M9.2 9.9c.2-.6.5-.6.8-.6h.5c.15 0 .35 0 .5.4.2.5.6 1.5.65 1.6.05.1.08.25 0 .4-.08.15-.13.25-.25.38-.13.13-.27.3-.38.4-.13.13-.26.26-.11.5.15.26.65 1.07 1.4 1.73.96.86 1.77 1.12 2.02 1.25.25.13.4.1.55-.05.15-.16.6-.7.76-.94.16-.24.32-.2.53-.12.22.08 1.38.65 1.62.77.24.12.4.18.46.28.06.1.06.6-.14 1.17-.2.58-1.16 1.1-1.6 1.16-.44.07-1 .1-3.2-.9-2.7-1.2-4.4-4.1-4.5-4.3-.1-.2-.86-1.14-.86-2.18 0-1.03.53-1.53.72-1.74Z" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </nav>
+  <p class="footer__legal">© <span data-year></span> Data Solutions Group</p>
+</footer>
+
+<script src="js/vendor/particles.min.js"></script>
+<script src="js/particles-init.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

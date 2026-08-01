@@ -1,0 +1,9 @@
+# Claude Code local settings (machine-specific, not shared)
+.claude/settings.local.json
+.claude/skills/
+
+# opencode local skill install (mirrors .claude/skills)
+.opencode/
+
+# impeccable skill local state/cache
+.impeccable/

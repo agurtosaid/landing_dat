@@ -196,6 +196,16 @@ Named stages (not numbered) connected by a trace line that fills green left-to-r
 ### Navigation
 Fixed single-row header: wordmark left, one command-style CTA right. Transparent over the hero, gains a blurred dark fill only past the first scroll tick. No dropdown, no hamburger — the page has one CTA and one job.
 
+### Logo Watermark
+The DSG logo sits once behind all content, centered, fixed to the viewport, and at 7% opacity (`#particles-js::before`), under the particle network. It stays at or below that opacity so that all text keeps AA contrast over it.
+
+### Portfolio (`#portafolio`)
+The one place where real product screenshots enter the system. It opens with the featured case (the access control system): commit-style meta line, heading, lede, a module tour, a hairline-divided spec list, and a WhatsApp CTA with a pre-filled message. Below it, the other projects reuse the log entry grammar with the domain in the teal hash slot and a thumbnail on the right. The whole row is the click target through one link. These are divided rows, not cards.
+
+The module tour is an ARIA tablist with arrow-key support. Without JavaScript every panel stays visible and stacked. Switching modules runs a single green scan line across the capture, which is the section's one authored motion and is disabled under `prefers-reduced-motion`. Below 700px, captures keep a legible width and scroll inside their frame.
+
+**The Masked Data Rule.** No capture of a client system ships with real personal data. Names, ID numbers, license plates, and operator names are covered with opaque bars of fixed length that don't reflect the original text, never with blur.
+
 ### Particle Network Background (signature component)
 A `particles.js` canvas (`#particles-js`, self-hosted at `js/vendor/particles.min.js`, `js/particles-init.js`), fixed to the full viewport behind every section — it is the page's connective tissue, replacing the earlier per-section static SVG trace linework with one continuous live circuit that runs the entire site. ~46 small green/teal dots (`#00EB7A` / `#00F8D2`) drift slowly and link with thin lines (16% opacity) when close, echoing the trace-and-node language already in the logo and the pipeline stepper. Hover draws live lines to the cursor ("grab"); click seeds a few new points ("push") — the only sitewide pointer-driven motion in the system. Disabled to a smaller, static point field under `prefers-reduced-motion`. Sections that need to visually separate from the flow (`.stance`) use a semi-transparent panel color rather than opaque, so the network still reads faintly through — no section fully hides it.
 

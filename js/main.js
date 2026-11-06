@@ -33,6 +33,58 @@
     }
   }
 
+  var tour = document.querySelector("[data-tour]");
+  if (tour) {
+    var tablist = tour.querySelector("[role='tablist']");
+    var tabs = Array.prototype.slice.call(tour.querySelectorAll("[role='tab']"));
+    var panels = tabs.map(function (tab) {
+      return document.getElementById(tab.getAttribute("aria-controls"));
+    });
+
+    var selectTab = function (index, moveFocus, animate) {
+      tabs.forEach(function (tab, i) {
+        var active = i === index;
+        tab.setAttribute("aria-selected", active ? "true" : "false");
+        if (active) tab.removeAttribute("tabindex");
+        else tab.setAttribute("tabindex", "-1");
+        panels[i].hidden = !active;
+        panels[i].removeAttribute("data-scan");
+      });
+      if (animate && !reduceMotion) {
+        void panels[index].offsetWidth; // reinicia la animación de escaneo
+        panels[index].setAttribute("data-scan", "");
+      }
+      if (moveFocus) tabs[index].focus();
+    };
+
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener("click", function () {
+        selectTab(i, false, true);
+      });
+      tab.addEventListener("keydown", function (event) {
+        var last = tabs.length - 1;
+        var next = null;
+        if (event.key === "ArrowRight") next = i === last ? 0 : i + 1;
+        else if (event.key === "ArrowLeft") next = i === 0 ? last : i - 1;
+        else if (event.key === "Home") next = 0;
+        else if (event.key === "End") next = last;
+        if (next === null) return;
+        event.preventDefault();
+        selectTab(next, true, true);
+      });
+    });
+
+    tour.addEventListener("animationend", function (event) {
+      if (event.animationName !== "scan") return;
+      var panel = event.target.closest(".tour__panel");
+      if (panel) panel.removeAttribute("data-scan");
+    });
+
+    tablist.hidden = false;
+    tour.setAttribute("data-ready", "");
+    selectTab(0, false, false);
+  }
+
   var pipeline = document.querySelector("[data-pipeline]");
   if (pipeline) {
     var fill = function () {

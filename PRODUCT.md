@@ -24,7 +24,7 @@ An experienced development team ("amplia experiencia") covering the full range a
 
 ## Operating Context
 
-Primary contact channels: WhatsApp (+51 987613796) and social media (Facebook, Instagram — specific handles not yet provided). No client portal, dashboard, or logged-in area; this is a single public marketing page.
+Primary contact channels: WhatsApp (+51 922775203) and social media (Facebook; Instagram handle not yet provided). No client portal, dashboard, or logged-in area; this is a single public marketing page.
 
 ## Capabilities and Constraints
 
@@ -43,12 +43,15 @@ No pricing, packages, or SLA information was provided.
 - Domain: **DAT.PE**
 - Logo: `assets/logo-dsg.png` — rounded bold wordmark "DSG" in a green→teal gradient, with circuit-board iconography inside the "D," signaling a tech/software identity.
 - Color constraint (user-specified, binding): green on a black background.
-- Contact: WhatsApp +51 987613796 (click-to-chat should use `https://wa.me/51987613796`)
-- Social presence: Facebook and Instagram (icons/links; exact profile URLs not yet provided — placeholder links until supplied)
+- Contact: WhatsApp +51 922775203 (click-to-chat should use `https://wa.me/51922775203`)
+- Social presence: Facebook (https://www.facebook.com/profile.php?id=61552488623546) and Instagram (profile URL not yet provided; icon stays disabled until supplied)
 
 ## Evidence on Hand
 
-- Only asset on hand is the logo (`assets/logo-dsg.png`). No case studies, portfolio pieces, client testimonials, team photos, or press were provided — none will be fabricated. The page will lead with services and positioning, not social proof, until real evidence is supplied.
+- Logo (`assets/logo-dsg.png`).
+- Portfolio supplied by the user: the access control system built in Ruby for Colegio Vallesol (the product to sell), the custom PHP ecommerce rya.pe, and the sites moli-intl.com, norimportstore.info, securityperu.com, cipermi.com and cappiura.org.pe (custom plugins connected to the client's administrative system).
+- The only usage figure on hand is the Vallesol scan chart (over 10,000 scans in April 2026). No testimonials, team photos, or press were provided, and none will be fabricated.
+- Screenshots of the access control system contain real names, DNI numbers, and license plates. Publish only masked versions from `assets/portafolio/`, never `images/` or the user manual PDF.
 
 ## Product Principles
 
